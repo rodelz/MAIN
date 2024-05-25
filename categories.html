@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loyal Tea</title>
+  <style>
+    body {
+      background-color: lightgoldenrodyellow;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      background-color: #333;
+      color: white;
+    }
+    .header img {
+      height: 50px;
+      margin-right: 20px;
+      border-radius: 50%;
+    }
+    .header h1 {
+      margin: 0;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    h2 {
+      color: #333;
+    }
+    p {
+      font-size: 18px;
+      color: #666;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .category {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .image-grid img {
+      width: 50px;
+      height: auto;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="image/background.jpg" alt="Loyal Tea Logo">
+    <h1>Loyal Tea</h1>
+  </div>
+
+  <main>
+    <section id="welcome" class="category">
+      <h2>Welcome to Loyal Tea</h2>
+      <p>The taste that will keep you coming back for more</p>
+      <button onclick="getStarted()">Get Started</button>
+    </section>
+    <div class="image-grid">
+      <img src="image/item1.jpg" alt="Image 1">
+      <img src="image/item6.jpg" alt="Image 2">
+      <img src="image/item3.jpg" alt="Image 3">
+      <img src="image/item4.jpg" alt="Image 4">
+    </div>
+  </main>
+
+  <script>
+    function getStarted() {
+      window.location.href = 'drinks.html';
+    }
+  </script>
+</body>
+</html>
